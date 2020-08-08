@@ -1,0 +1,239 @@
+html, body {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+/*MENU*/
+    header {
+        background-color: black;
+        color: white;
+        height: 50px;
+        width: 100%;
+        position: fixed;
+        z-index: 10;
+    }
+    #Logo {
+        width: 85px;
+        margin-top: 3px;
+        margin-left: 3%;
+        position: absolute;
+    }
+    #Menu {
+        
+        float: right;
+        margin-right: 1%;
+        list-style: none;
+        margin-top: 0;
+    }
+    li {
+        float: left;
+        padding: 15px 10px 15px 10px;
+        text-transform: uppercase;
+
+    }
+    li:hover {
+        background-color:#296A89 ;
+    }
+    #imagem_fundo {
+        background: url("Fundo.jpg");
+        background-size: cover;
+        height: 615px;
+        text-align: center;
+        padding: 30px;
+        background-position-x: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }  
+/*MENU/FIM*/
+
+/*CAPA*/
+    #Título {
+        color: white;
+        padding-top: 8%;
+        font-size: 350%; 
+        font-family: 'Libre Baskerville', serif;
+        text-align: center;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #Subtítulo {
+        color: white;
+        margin: 0 40% 0 40%;
+        padding-top: 10px;
+        border-top: 3px solid white;
+        padding-bottom: 30px;
+        font-size: 125%;
+        font-family: 'Libre Baskerville', serif;
+        text-transform: uppercase ;
+        text-shadow: 2px 2px 4px #000000;
+    }
+    #Ação {
+        color: white;
+        border:0,1px white solid;
+        padding: 10px 15px 10px 15px;
+        border-radius: 25px;
+        background-color:black;
+        border-color: black;
+        text-decoration: none;
+        font-size: 20px;   
+    }
+    #Ação:hover{
+        background-color: #296A89;
+    }
+/*CAPA/FIM*/
+
+/*ÍCONE/IMAGEM/VÍDEO*/
+    .Ícone {
+        width: 40%;
+        margin: 0;
+        border-radius: 50%;
+    }
+    .Ícone:hover{
+        background-color: lightblue ;
+    }
+    .ImgPerspectiva {
+        width: 100%;
+        height: 250px;
+        border: 2px solid #ABADEB
+
+    }
+    .ImgEu {
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 100%;
+        height: 60%;
+        border: 2px solid #ABADEB;
+    }
+    .Vídeo {
+        margin-top: 30%; 
+        margin-bottom: 30%;
+        border: 2px solid #ABADEB;
+    }
+/*ÍCONE/IMAGEM//FIM*/
+
+/*COLUNAS*/
+    .Coluna {
+        float: left;
+        padding: 0 5%;
+        position: relative;
+        width: 40%;
+    }
+    .Coluna1 {
+        float: left;
+        padding: 0 5%;
+        position: relative;
+        width: 15%;
+    }
+    .Coluna2 {
+        float: left;
+        padding: 0 2%;
+        position: relative;
+        width: 29%;
+    }
+/*COLUNAS/FIM*/
+
+
+/*TEXTO*/
+    .Título0 {
+        font-family:'Libre Baskerville', serif;
+        font-size:16px ;
+        text-decoration: none;
+    }
+    .Título1 {
+        font-family: 'Libre Baskerville', serif;
+        font-size: 30px;
+    }
+    .Título2 {
+        font-size: 23px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .Título3 {
+        font-size: 18px;
+        font-family: 'Libre Baskerville', serif;
+    }
+    .Branco {
+        color: white;
+    }
+    .Fonte {
+        font-family:'Open Sans', sans-serif ;
+        font-size: 15px;
+    }
+    .Centralizado {
+        text-align: center;
+    }
+/*TEXTO/FIM*/
+
+/*CORDEFUNDO*/
+.Destaque {
+    background-color: #f2f2f2;
+}
+.Destaque2 {
+    background-color: white;
+}
+/*COR*DE*FUNDO/FIM*/
+
+footer {
+    background-color:#296A89 ;
+    float: left;
+    width: 100%;
+}
+section {
+    padding: 20px;
+    float: left;
+}
+.Top {
+    padding-top: 3%;
+}
+img:hover {
+    transform: scale(1.022);
+}
+Img{
+    transition: 500ms
+}
+
+
+/*RESPONSIVIDADE*/
+    @media all and (max-width: 768px) {
+        #Menu {
+            visibility: hidden;
+        }
+        .Coluna, .Coluna1, .Coluna2 {
+            display: block;
+            width: 80%;
+            padding: 0;
+            margin: 10px auto;
+            float: none;
+        }
+        .ImgPerspectiva {
+            height: 15%;
+        }
+        #LogoDiv {
+            width: 100%;
+            position: relative;
+            text-align: center;
+        }
+        #Logo {
+            width: 110px ;
+            padding-top: 5px;
+            margin-left:0px;
+            transform:translateX(-50%);
+        }
+        #Título {
+            text-align: center;
+            text-size-adjust: 15%;
+            font-size: 190%;
+            padding-top: 30%; 
+        }
+
+        #Subtítulo {
+            margin: 0 25% 0 25%;
+        }
+        
+    }
+    @media all and (max-width: 350px){
+        #Título { 
+            font-size: 170%;
+        }
+        #Subtítulo {
+            font-size: 115%;
+        }
+    }
+/*RESPONSIVIDADE/FIM*/
